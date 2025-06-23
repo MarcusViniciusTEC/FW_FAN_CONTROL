@@ -43,6 +43,7 @@ ${PROJ_PATH}/Middleware/SuperLoop/sl_lib.c
 ${PROJ_PATH}/Middleware/SuperLoop/sl.c
 ${PROJ_PATH}/HMI/Src/hmi.c
 ${PROJ_PATH}/App/Src/buttons.c
+${PROJ_PATH}/App/Src/adc.c
 ${PROJ_PATH}/HMI/Src/hmi_dashboard.c
 ${PROJ_PATH}/HMI/Src/hmi_intro.c
 
@@ -52,6 +53,8 @@ ${PROJ_PATH}/Core/Src/syscalls.c
 ${PROJ_PATH}/Core/Src/stm32f1xx_it.c 
 ${PROJ_PATH}/Core/Src/stm32f1xx_hal_msp.c 
 
+${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c 
+${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 
 ${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c 
 ${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c 
@@ -75,21 +78,14 @@ ${PROJ_PATH}/Core/Startup/startup_stm32f103c8tx.s
 #
 set(include_path_DIRS
 
-
-
-
 ${PROJ_PATH}/Core/Inc 
 ${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Inc 
 ${PROJ_PATH}/Drivers/CMSIS/Device/ST/STM32F1xx/Include 
 ${PROJ_PATH}/Drivers/CMSIS/Include
 ${PROJ_PATH}/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy 
 ${PROJ_PATH}/Middleware/SuperLoop
-
-
 ${PROJ_PATH}/HMI/Inc
 ${PROJ_PATH}/App/Inc
-
-
 
 )
 
